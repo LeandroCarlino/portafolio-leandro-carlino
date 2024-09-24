@@ -1,0 +1,41 @@
+.introduction {
+    background: url("../../../assets/img/wallpaper4.gif") no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-text p {
+    margin-bottom: 0.2em;
+}
+
+.introduction-container {
+    height: 88vh;
+    width: 100vw;
+    padding: 4em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction-text {
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 20px;
+    padding: 1em;
+    margin-left: 2.5em;
+}
+
+.profile {
+    border: var(--color-accent) 8px double;
+    border-radius: 50%;
+    width: 12em;
+}
+
+.p-tittle {
+    color: var(--color-accent);
+}

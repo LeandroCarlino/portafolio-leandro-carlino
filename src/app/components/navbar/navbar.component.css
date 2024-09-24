@@ -1,0 +1,25 @@
+.container-navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    color: var(--color-text);
+    background-color: #00000080;
+    z-index: 1;
+}
+
+.container-navbar li {
+    margin-right: 4em;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    animation: neon 14s infinite;
+}
