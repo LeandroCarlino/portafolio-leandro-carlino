@@ -1,1 +1,413 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables CSS */
+
+:root {
+    --color-background: black;
+    --color-text: whitesmoke;
+    --color-accent: #1fbed5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navegacion */
+
+.container-navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    color: var(--color-text);
+    background-color: #00000080;
+    z-index: 1;
+}
+
+.container-navbar li {
+    margin-right: 4em;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    animation: neon 14s infinite;
+}
+
+/* introduction */
+
+.introduction {
+    background: url("app/assets/img/wallpaper4.gif") no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-text p {
+    margin-bottom: 0.2em;
+}
+
+.introduction-container {
+    height: 88vh;
+    width: 100vw;
+    padding: 4em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction-text {
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 20px;
+    padding: 1em;
+    margin-left: 2.5em;
+}
+
+.profile {
+    border: var(--color-accent) 8px double;
+    border-radius: 50%;
+    width: 12em;
+}
+
+.p-tittle {
+    color: var(--color-accent);
+}
+
+/* Sobre mi */
+
+.about-me {
+    background-image: linear-gradient(62deg, #000000 0%, #0f0d17 100%);
+    color: var(--color-text);
+    min-height: 100vh;
+    padding: 4em 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.biography {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+
+.about-me-tittle {
+    margin: 0 6em 1em;
+    padding-top: 1em;
+}
+
+.about-me-tittle h3 {
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 1em 0;
+}
+
+.about-me-text {
+    padding: 1.5em;
+    border-radius: 20px;
+    max-width: 560px;
+    border: 1px solid var(--color-accent);
+    box-shadow: 0 5px 15
+}
+
+.about-me-text p {
+    margin-bottom: 10px;
+}
+
+.about-me-icon {
+    filter: drop-shadow(2px 6px 8px black);
+    width: 10em;
+}
+
+.about-me p {
+    text-align: center;
+}
+
+.about-me-technologies {
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+.about-me-technologies h3 {
+    margin-bottom: 1em;
+}
+
+.about-me-technologies img {
+    cursor: pointer;
+    width: 4em;
+    margin: 1em;
+}
+
+.about-me-technologies img:hover {
+    filter: blur(1px);
+}
+
+.about-me-cv {
+    text-align: center;
+}
+
+.about-me-cv h3 {
+    margin-bottom: 1em;
+}
+
+
+/* Proyectos */
+
+.mySwiper {
+    width: 60vw;
+    background-color: rgb(0, 0, 0);
+    padding-top: 2em;
+    border-radius: 2em;
+}
+
+.projects-container {
+    text-align: center;
+    padding: 8rem 2rem;
+    background: url("app/assets/img/wallpaper-edited.png") no-repeat center / cover;
+}
+
+.projects-header {
+    background-color: #000000bd;
+    width: fit-content;
+    padding: 0.8em;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+
+.project-image {
+    width: 50vw;
+}
+
+.project-title {
+    font-size: 18px;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    color: lightgrey;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Footer */
+
+.contact {
+    background-image: linear-gradient(62deg, #000000 0%, #0f0d17 100%);
+    padding: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.footer-url {
+    margin: 1.5em 0em 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact img {
+    width: 4em;
+    margin: 1em;
+}
+
+@media (max-width: 1250px) {
+    .biography {
+        flex-direction: column;
+    }
+
+    .about-me {
+        margin: 0;
+        padding: 1.2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-text {
+        margin: auto;
+    }
+
+    .about-me-tittle {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .container-navbar {
+        width: 100vw;
+        padding: 1.5em;
+        justify-content: space-around;
+    }
+
+    .container-navbar li {
+        margin: 0em 1em 0em 1em;
+    }
+
+    .introduction-container {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        padding: 2em;
+    }
+
+    .introduction-text {
+        margin-left: 0;
+        padding: 0.5em;
+    }
+
+    .profile {
+        margin-bottom: 2em;
+    }
+
+    .about-me-text {
+        padding: 1em;
+    }
+
+    .pdf {
+        width: 100%;
+        height: 540px;
+    }
+
+    .technologies-container {
+        width: 94%;
+    }
+
+    .mySwiper {
+        width: auto;
+    }
+
+    .project-image {
+        width: 70vw;
+    }
+}
+
+/* Button */
+
+.btn {
+    box-shadow: inset 0 0 0 2px #5ddef1;
+    color: #5ddef1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 5px;
+    padding: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2em;
+}
+
+.btn::before,
+.btn::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btn::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+.btn::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    border-color: white;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.btn:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+/* Others */
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.zoom2 {
+    transition: transform 0.2s;
+}
+
+.zoom2:hover {
+    transform: scale(1.02);
+}
+
+.blue {
+    color: #1fbed5;
+}
+
+/*Keyframes*/
+
+@keyframes neon {
+
+    0%,
+    35%,
+    45%,
+    65%,
+    100% {
+        text-shadow: whitesmoke 0 1px 8px, #2bc7db 0 1px 18px, #2bc7db 0 1px 24px;
+    }
+
+}
