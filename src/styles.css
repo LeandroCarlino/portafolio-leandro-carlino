@@ -1,3 +1,128 @@
+/* otra animacion */
+
+
+/* body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 1000s linear infinite;
+  background: url("https://4kwallpapers.com/images/walls/thumbs_3t/10307.jpg"),
+    #111111;
+  color: #eee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  } 
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 100s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+} */
+
+
+/* Animacion fondo */
+
+body {
+    background-color: #000;
+}
+
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 
+    /* Lado izquierdo */
+    -40vw -20vh 0px 1px #fff, 
+    -35vw -15vh 1px 1px #fff, 
+    -38vw -10vh 1px 1px #fff, 
+    -32vw 30vh 1px 0px #fff, 
+    -37vw 40vh 1px 0px #fff, 
+    -40vw -10vh 1px 0px #fff, 
+    -33vw 25vh 1px 1px #fff, 
+    -39vw 45vh 1px 0px #fff, 
+    -42vw -15vh 1px 1px #fff, 
+    -35vw -40vh 1px 0px #fff, 
+    -40vw 35vh 0px 1px #fff, 
+    -30vw -15vh 1px 1px #fff, 
+    -40vw 10vh 0px 1px #fff, 
+    -35vw 50vh 1px 0px #fff, 
+    -40vw 5vh 1px 1px #fff, 
+    -45vw -25vh 1px 0px #fff, 
+    -43vw 15vh 1px 1px #fff, 
+    -35vw -25vh 1px 0px #fff, 
+    -48vw -5vh 1px 0px #fff, 
+    -40vw -40vh 0px 1px #fff, 
+    -45vw -15vh 1px 1px #fff, 
+    -30vw -35vh 1px 1px #fff, 
+    -35vw -25vh 1px 1px #fff, 
+    /* Lado derecho, ajustado para simetría */
+    40vw -20vh 0px 1px #fff, 
+    35vw -15vh 1px 1px #fff, 
+    38vw -10vh 1px 1px #fff, 
+    32vw 30vh 1px 0px #fff, 
+    37vw 40vh 1px 0px #fff, 
+    40vw -10vh 1px 0px #fff, 
+    33vw 25vh 1px 1px #fff, 
+    39vw 45vh 1px 0px #fff, 
+    42vw -15vh 1px 1px #fff, 
+    35vw -40vh 1px 0px #fff, 
+    40vw 35vh 0px 1px #fff, 
+    30vw -15vh 1px 1px #fff, 
+    40vw 10vh 0px 1px #fff, 
+    35vw 50vh 1px 0px #fff, 
+    40vw 5vh 1px 1px #fff, 
+    45vw -25vh 1px 0px #fff, 
+    43vw 15vh 1px 1px #fff, 
+    35vw -25vh 1px 0px #fff, 
+    48vw -5vh 1px 0px #fff, 
+    40vw -40vh 0px 1px #fff, 
+    45vw -15vh 1px 1px #fff, 
+    30vw -35vh 1px 1px #fff, 
+    35vw -25vh 1px 1px #fff;
+
+
+    animation: zoom 30s alternate infinite;
+    /* Animación más lenta */
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.20);
+        /* Menos movimiento */
+    }
+}
+
+
 /* Variables CSS */
 
 :root {
@@ -12,26 +137,43 @@
     border: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: black;
+    /* background-color: var(--color-background); */
+    /* background-color: whitesmoke; */
 }
 
 h1 {
-    color: whitesmoke;
+    color: var(--color-text);
     margin-bottom: 0.5em;
+    font-size: 19px;
 }
 
 h3 {
     text-align: center;
+    color: var(--color-text);
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
+}
+
+
+@media (min-width: 850px) {
+    /* .box-container {
+        margin: 0 4em auto;
+    } */
+
+    .box-area {
+        width: 80vw;
+        margin: auto;
+    }
 }
 
 @media (max-width: 1250px) {
@@ -57,6 +199,7 @@ a {
 }
 
 @media (max-width: 850px) {
+
     .container-navbar {
         width: 100vw;
         padding: 1.5em;

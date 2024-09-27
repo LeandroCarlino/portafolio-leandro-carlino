@@ -1,66 +1,67 @@
-<section class="about-me">
-    <section class="biography">
-        <section class="about-me-tittle">
-            <img src="assets/img/about-me.png" alt="Profile icon" class="about-me-icon" />
-            <h3>Sobre mi...</h3>
+<section class="box-container">
+    <section class="about-me">
+        <section class="biography">
+            <section class="about-me-tittle">
+                <img src="assets/img/about-me.png" alt="Profile icon" class="about-me-icon" />
+                <h3>Sobre mi...</h3>
+            </section>
+            <section class="about-me-text">
+                <p>
+                    Nací en Capital Federal, pero vivo en <span class="blue">San Miguel de Tucumán</span>, tengo <span
+                        id="age">{{ age }}</span> años
+                    y estudio la carrera de <span class="blue">programador universitario</span>.
+                </p>
+                <p>
+                    Mis inicios con la programación fueron en
+                    <span class="blue">2020</span>. El paron universitario me hizo
+                    investigar acerca de este extenso mundo.
+                </p>
+                <p>
+                    Comencé con un curso basico de
+                    <span class="blue">Javascript</span> impartido por un programador
+                    argentino radicado en Australia, al siguiente año decidí buscar por
+                    una carrera que tenga que ver con este mundo.
+                </p>
+                <p>
+                    Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
+                    guias. Los días de facultad me nutrieron de confianza, y mi primer
+                    trabajo me termino de forjar
+                </p>
+                <p>
+                    Despues de muchas mucho tiempo en esto, puedo decir perfectamente
+                    que se convirtio en mi <span class="blue">pasión</span>, y lo que
+                    deseo hacer el resto de mi vida.
+                </p>
+            </section>
         </section>
-        <section class="about-me-text">
-            <p>
-                Nací en Capital Federal, pero vivo en <span class="blue">San Miguel de Tucumán</span>, tengo <span
-                    id="age">{{ age }}</span> años
-                y estudio la carrera de <span class="blue">programador universitario</span>.
-            </p>
-
-            <p>
-                Mis inicios con la programación fueron en
-                <span class="blue">2020</span>. El paron universitario me hizo
-                investigar acerca de este extenso mundo.
-            </p>
-            <p>
-                Comencé con un curso basico de
-                <span class="blue">Javascript</span> impartido por un programador
-                argentino radicado en Australia, al siguiente año decidí buscar por
-                una carrera que tenga que ver con este mundo.
-            </p>
-            <p>
-                Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
-                guias. Los días de facultad me nutrieron de confianza, y mi primer
-                trabajo me termino de forjar
-            </p>
-            <p>
-                Despues de muchas mucho tiempo en esto, puedo decir perfectamente
-                que se convirtio en mi <span class="blue">pasión</span>, y lo que
-                deseo hacer el resto de mi vida.
-            </p>
-        </section>
+        <!-- Tecnologías -->
     </section>
-    <!-- Tecnologías -->
-</section>
 
-<section class="about-me-technologies">
-    <h3>Habilidades tecnicas:</h3>
-    <img src="assets/img/icono-html.png" alt="Icono de HTML" class="zoom" title="HTML" />
-    <img src="assets/img/icono-css.png" alt="Icono de CSS" class="zoom" title="CSS" />
-    <img src="assets/img/icono-bs.png" alt="Icono de Bootstrap" class="zoom" title="Bootstrap" />
-    <img src="assets/img/icono-wp.png" alt="Icono de Wordpress" class="zoom" title="Wordpress" />
-    <img src="assets/img/icono-js.png" alt="Icono de Javascript" class="zoom" title="Javascript" />
-    <img src="assets/img/icono-typescript.png" alt="Icono de Typescript" class="zoom" title="Wordpress" />
-    <img src="assets/img/icono-angular.png" alt="Icono de Angular" class="zoom" title="Angular" />
-    <img src="assets/img/icono-git.png" alt="Icono de GitHub" class="zoom" title="Github" />
-</section>
+    <section class="about-me-technologies">
+        <h3>Habilidades tecnicas:</h3>
+        <img src="assets/img/icono-html.png" alt="Icono de HTML" class="zoom" title="HTML" />
+        <img src="assets/img/icono-css.png" alt="Icono de CSS" class="zoom" title="CSS" />
+        <img src="assets/img/icono-bs.png" alt="Icono de Bootstrap" class="zoom" title="Bootstrap" />
+        <img src="assets/img/icono-wp.png" alt="Icono de Wordpress" class="zoom" title="Wordpress" />
+        <img src="assets/img/icono-js.png" alt="Icono de Javascript" class="zoom" title="Javascript" />
+        <img src="assets/img/icono-typescript.png" alt="Icono de Typescript" class="zoom" title="Wordpress" />
+        <img src="assets/img/icono-angular.png" alt="Icono de Angular" class="zoom" title="Angular" />
+        <img src="assets/img/icono-git.png" alt="Icono de GitHub" class="zoom" title="Github" />
+    </section>
 
-<section class="about-me-cv">
-    <h3>Curriculum Vitae:</h3>
+    <section class="about-me-cv">
+        <h3>Curriculum Vitae:</h3>
 
-    <button type="button" (click)="openClosePDF()" id="open-button" class="btn">
-        <span *ngIf="!openPdf">Mostrar PDF</span>
-        <span *ngIf="openPdf">Cerrar PDF</span>
-    </button>
+        <button type="button" (click)="openClosePDF()" id="open-button" class="btn">
+            <span *ngIf="!openPdf">Mostrar PDF</span>
+            <span *ngIf="openPdf">Cerrar PDF</span>
+        </button>
 
 
-    <div *ngIf="openPdf">
-        <iframe
-            src="https://drive.google.com/file/d/1zsQwTAZBzJYYbsFciopvNqYDZowcMwB5/preview#zoom=100%&navbar=0&toolbar=0"
-            width="630" height="880" allow="autoplay" class="pdf" title="pdf" async></iframe>
-    </div>
+        <div *ngIf="openPdf">
+            <iframe
+                src="https://drive.google.com/file/d/1zsQwTAZBzJYYbsFciopvNqYDZowcMwB5/preview#zoom=100%&navbar=0&toolbar=0"
+                width="630" height="880" allow="autoplay" class="pdf" title="pdf" async></iframe>
+        </div>
+    </section>
 </section>

@@ -28,8 +28,6 @@ export class AboutMeComponent {
 
   openClosePDF() {
     this.openPdf = !this.openPdf;
-
-    console.log('jola')
   }
 }
 

@@ -2,10 +2,10 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    width: 100%;
+    width: 80vw;
     padding: 1em;
     color: var(--color-text);
-    background-color: #00000080;
+    background-color: #00000080; 
     z-index: 1;
 }
 
