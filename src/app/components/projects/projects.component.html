@@ -6,12 +6,12 @@
 
             <ngb-carousel>
                 <ng-template ngbSlide *ngFor="let project of projects">
-                    <div class="picsum-img-wrapper">
+                    <div class="picsum-img-wrapper" (click)="goToPage(project.url)">
                         <img [src]="project.image" alt="Random first slide" />
                     </div>
                     <div class="carousel-caption">
                         <h3>{{ project.name }}</h3>
-                        <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+                        <!-- <p>{{project.description}}</p> -->
                     </div>
                 </ng-template>
             </ngb-carousel>

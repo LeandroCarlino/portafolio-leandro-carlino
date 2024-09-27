@@ -37,3 +37,7 @@
 img {
     width: 50vw;
 }
+
+.picsum-img-wrapper {
+    cursor: pointer;
+}
