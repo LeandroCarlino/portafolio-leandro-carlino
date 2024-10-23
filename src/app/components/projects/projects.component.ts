@@ -51,8 +51,6 @@ export class ProjectsComponent {
     },
   ]
 
-  // images = ['assets/img/paises-app.png', 'assets/img/people-generator.png', 'assets/img/post-and-view.png']
-
   constructor() {
     console.log(this.projects);
   }
